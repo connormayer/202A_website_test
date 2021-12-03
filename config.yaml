@@ -1,0 +1,43 @@
+baseurl: "/"
+languageCode: "en-us"
+title: "Connor's academic website"
+theme: "hugo-xmin"
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+footnotereturnlinkcontents: "↩"
+#relativeURLs: true
+#uglyURLs: true
+
+permalinks:
+  note: "/note/:year/:month/:day/:slug/"
+  post: "/post/:year/:month/:day/:slug/"
+
+menu:
+  main:
+    - name: Home
+      url: ""
+      weight: 1
+    - name: CV
+      url: "papers/cv.pdf"
+      weight: 2
+    - name: Research
+      url: "research/"
+      weight: 3
+    - name: Teaching
+      url: "teaching/"
+      weight: 4
+    - name: Github
+      url: "https://github.com/connormayer"
+      weight: 5
+
+params:
+  description: "Connor's academic website"
+  footer: "&copy; Connor Mayer 2021"
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: true
